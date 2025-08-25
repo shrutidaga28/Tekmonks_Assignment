@@ -55,7 +55,7 @@ def parse_latest_stories(html_text: str, max_items: int = 6):
             
             if (
                 href.startswith("https://time.com") and
-                "/20" in href and   # crude check for article year
+                "/20" in href and  
                 href not in seen_links and
                 link_text
             ):
